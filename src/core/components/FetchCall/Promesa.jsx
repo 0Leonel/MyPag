@@ -1,5 +1,4 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
 import useMultiFetch from "./useMultiFetch";
 
 export const getCat = () => {
@@ -12,7 +11,7 @@ export const getUsers = () => {
 
 export const adapterCat = (res) => res[0].url;
 const Promesa = () => {
-  const { data, error, isLoading } = useMultiFetch([
+  const { data, isLoading } = useMultiFetch([
     {
       name: "users",
       initialState: [],

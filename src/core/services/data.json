@@ -1,0 +1,35 @@
+{
+    "lamp":[{
+            "id" : "01",
+            "url" : "../../../src/assets/lamps/lamp1/lamp.jpg",
+            "url2" : "../../../src/assets/lamps/lamp1/lamp2.jpg",
+            "tittle":"Lampara de Madera",
+            "description" : "Hechas de sólido pino y barnizadas con un acabado mate de barniz natural, estas creaciones son una verdadera obra de arte, donde la madera cobra vida con la pasión y habilidad que las han dado forma",
+            "price" : "90"
+        },
+        {
+            "id" : "02",
+            "url" : "../../../src/assets/lamps/lamp2/lamp.jpg",
+            "url2" : "../../../src/assets/lamps/lamp2/lamp2.jpg",
+            "tittle":"Lampara de Madera",
+            "description" : "Hechas de sólido pino y barnizadas con un acabado mate de barniz natural en color blanco, estas creaciones son una verdadera obra de arte, donde la madera cobra vida con la pasión y habilidad que las han dado forma.",
+            "price" : "90"
+        },
+        {
+            "id" : "03",
+            "url" : "../../../src/assets/lamps/lamp3/lamp.jpg",
+            "url2" : "../../../src/assets/lamps/lamp3/lamp2.jpg",
+            "tittle":"Lampara de Madera",
+            "description" : "Hechas de sólido pino y barnizadas con un acabado mate de barniz natural, estas creaciones son una verdadera obra de arte, donde la madera cobra vida con la pasión y habilidad que las han dado forma.",
+            "price" : "90"
+        },
+        {
+            "id" : "04",
+            "url" : "../../../src/assets/lamps/lamp4/lamp.jpg",
+            "url2" : "../../../src/assets/lamps/lamp4/lamp2.jpg",
+            "tittle":"Lampara de Madera",
+            "description" : "Hechas de sólido pino y barnizadas con un acabado mate de barniz natural, estas creaciones son una verdadera obra de arte, donde la madera cobra vida con la pasión y habilidad que las han dado forma.",
+            "price" : "90"
+        }
+    ]
+}
