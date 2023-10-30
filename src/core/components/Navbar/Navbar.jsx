@@ -5,8 +5,8 @@ import Man from '/public/man.png'
 const navigation = [
   { name: 'Lamparas', href: '#', current: true },
   { name: 'Gatitos', href: '#', current: false },
-
-
+  
+  
 ]
 
 function classNames(...classes) {
