@@ -1,8 +1,8 @@
 import { Card } from '../Card/Card'
-import Navbar from '../Navbar/Navbar'
+
 export const Product = () => {
   return (<>
-    <Navbar/>
+    
     
     <section className="text-gray-400 bg-gray-900 body-font">
   <div className="container px-5 py-24 mx-auto">
