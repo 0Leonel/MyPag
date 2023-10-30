@@ -1,7 +1,7 @@
 {
     "lamp":[{
             "id" : "01",
-            "url" : "./public/lamp/lamp1/lamp.jpg",
+            "url" : "./public/lamp/lamp1/lamp.png",
             "url2" : "./public/lamp/lamp1/lamp2.jpg",
             "tittle":"Lampara de Madera",
             "description" : "Hechas de sólido pino y barnizadas con un acabado mate de barniz natural, estas creaciones son una verdadera obra de arte, donde la madera cobra vida con la pasión y habilidad que las han dado forma",
