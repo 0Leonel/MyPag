@@ -4,8 +4,9 @@ import Man from '/public/man.png'
 import { Link } from 'react-router-dom'
 
 const navigation = [
-  { name: 'Lamparas', href: '/lamparas', current: true },
-  { name: 'Gatitos', href: '/Gatitos', current: false },
+  { name: 'Lamparas', href: '/lamparas', current: false },
+  { name: 'Cosas', href: '/Cosas', current: false},
+  { name: 'Gatitos', href: '/Gatitos', current: false }
 ]
 
 function classNames(...classes) {
@@ -20,7 +21,6 @@ export default function Navbar() {
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-center">
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
-                {/* Mobile menu button*/}
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>

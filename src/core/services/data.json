@@ -2,49 +2,49 @@
     "lamp":[{
             "id" : "01",
             "url" : "https://i.pinimg.com/736x/d0/2c/d1/d02cd12079112a32489434205fe97905.jpg",
-            "tittle":"Lampara de colgante",
+            "title":"Lampara de colgante",
             "description" : "Hechas de sólido pino y barnizadas con un acabado mate de barniz natural, estas creaciones son una verdadera obra de arte, donde la madera cobra vida con la pasión y habilidad que las han dado forma",
             "price" : "No disponible"
         },
         {
             "id" : "02",
             "url" : "https://i.pinimg.com/736x/b3/d2/da/b3d2dab3f4be53b8d2b831b5ff675ac4.jpg",
-            "tittle":"Lampara colgante",
+            "title":"Lampara colgante",
             "description" : "Hechas de sólido pino y barnizadas con un acabado mate de barniz natural en color blanco, estas creaciones son una verdadera obra de arte, donde la madera cobra vida con la pasión y habilidad que las han dado forma.",
             "price" : "No disponible"
         },
         {
             "id" : "03",
             "url" : "https://i.pinimg.com/736x/ac/b3/29/acb32969f4b3c03ef811e19b1d8ba1d2.jpg",
-            "tittle":"Lampara colgante",
+            "title":"Lampara colgante",
             "description" : "Hechas de sólido pino y barnizadas con un acabado mate de barniz natural, estas creaciones son una verdadera obra de arte, donde la madera cobra vida con la pasión y habilidad que las han dado forma.",
             "price" : "No disponible"
         },
         {
             "id" : "04",
             "url" : "https://i.pinimg.com/736x/ef/b1/b3/efb1b3460ee41e098f681fea18cbf5c5.jpg",
-            "tittle":"Aplique pared unidireccional",
+            "title":"Aplique pared unidireccional",
             "description" : "Hechas de sólido pino y barnizadas con un acabado mate de barniz natural, estas creaciones son una verdadera obra de arte, donde la madera cobra vida con la pasión y habilidad que las han dado forma.",
             "price" : "No disponible"
         },
         {
             "id" : "05",
             "url" : "https://i.pinimg.com/736x/07/47/7e/07477e36d158586d217fdad33ae29641.jpg",
-            "tittle":"Velador Dormitorio Tacho Cinema",
+            "title":"Velador Dormitorio Tacho Cinema",
             "description" : "Hechas de sólido pino y barnizadas con un acabado mate de barniz natural, estas creaciones son una verdadera obra de arte, donde la madera cobra vida con la pasión y habilidad que las han dado forma.",
             "price" : "No disponible"
         },
         {
             "id" : "06",
             "url" : "https://i.pinimg.com/736x/d5/b4/df/d5b4df87fb4b97ead7a26da3bf45f907.jpg",
-            "tittle":"Aplique de techo con 2 spots",
+            "title":"Aplique de techo con 2 spots",
             "description" : "Hechas de sólido pino y barnizadas con un acabado mate de barniz natural, estas creaciones son una verdadera obra de arte, donde la madera cobra vida con la pasión y habilidad que las han dado forma.",
             "price" : "No disponible"
         },
         {
             "id" : "07",
             "url" : "https://i.pinimg.com/736x/80/0d/bc/800dbc92d29e0e2cee73a9d72445fdf9.jpg",
-            "tittle":"Lampara colgante",
+            "title":"Lampara colgante",
             "description" : "Hechas de sólido pino y barnizadas con un acabado mate de barniz natural, estas creaciones son una verdadera obra de arte, donde la madera cobra vida con la pasión y habilidad que las han dado forma.",
             "price" : "No disponible"
         }

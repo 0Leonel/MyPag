@@ -1,27 +1,23 @@
-import { useState } from 'react'
+import { Product } from './core/components/ProductList/Product.jsx'
+import { BrowserRouter } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './core/components/Navbar/Navbar';
+import Promesa from './core/components/FetchCall/Promesa';
+import { Home } from './core/components/ProductList/Home';
+import { Card } from './core/components/Card/Card.jsx';
+import { Things } from './core/components/Card/Things.jsx';
 
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      
-      <h1>My pagina</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          App
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
-
-export default App
+export const App = () => (
+  <BrowserRouter>
+  <>
+  <Navbar/>
+  
+  <Routes>
+      <Route path='/' element={ <Home/>}/>
+      <Route path='/lamparas' element={<Product> <Card/> </Product>}/>
+      <Route path='/Gatitos' element={<Promesa/>}/>
+      <Route path='/Cosas' element={<Product> <Things/> </Product>}/>
+    </Routes>
+  </>
+  </BrowserRouter>
+)

@@ -1,7 +1,8 @@
 
 export const  Home = () => {
   return (
-    <section className="h-[100vh] bg-indigo-900 ">
+    <body>
+      <section className=" bg-indigo-900 ">
         <div className=' container px-5 py-24 mx-auto'>
             <div className='flex flex-col text-center w-full mb-20'>
                 <h1 className="text-6xl my-4 text-gray-200 font-bold basis-full">Luminosas Creaciones en Madera y Más</h1>
@@ -9,6 +10,11 @@ export const  Home = () => {
             </div>
         </div>
     </section>
+      <footer>
+      
+      </footer>
+    </body>
+    
     
   )
 }
