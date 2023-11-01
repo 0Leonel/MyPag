@@ -11,7 +11,6 @@ export const App = () => (
   <BrowserRouter>
   <>
   <Navbar/>
-  
   <Routes>
       <Route path='/' element={ <Home/>}/>
       <Route path='/lamparas' element={<Product> <Card/> </Product>}/>

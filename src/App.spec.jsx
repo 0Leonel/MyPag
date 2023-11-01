@@ -1,11 +1,11 @@
 import { render } from "@testing-library/react";
 
-import App from "./App";
 import { describe, expect, it } from "vitest";
+import { Lamparas } from "./core/components/app_text/lamparas";
 
-describe("App", () => {
-  it("should render component", () => {
-    const component = render(<App />);
+describe("xd", () => {
+  it("xd", () => {
+    const component = render(<Lamparas/>);
     expect(component).toBeDefined();
   });
 });
