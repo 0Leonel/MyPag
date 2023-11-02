@@ -1,7 +1,8 @@
 import React from 'react'
 
-export const Lamparas = () => {
+ const Lamparas = () => {
   return (
-    <div>xd</div>
+    <p>Lamparas de madera</p>
   )
 }
+export default Lamparas;

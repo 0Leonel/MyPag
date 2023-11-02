@@ -1,9 +1,11 @@
 
 import Data from '../../services/data.json'
 
+export const appTitle =()=>{
+  return <p>LAmparas</p>;
+}
 export const Card = () => {
 
-  console.log(Data.lamp.map(item=>(item.url)));
   return (
     <>
     {Data?.lamp?.map(item=>(
@@ -22,6 +24,7 @@ export const Card = () => {
     ))
     
 }
+<appTitle/>
     </>
     
   )

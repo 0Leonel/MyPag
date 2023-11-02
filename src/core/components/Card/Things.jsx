@@ -1,4 +1,3 @@
-import a from '../../../assets/things/a.jpg'
 import { useData } from '../FetchCall/useData'
 
 export const Things = () => {
