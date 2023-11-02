@@ -9,9 +9,12 @@ export const Product = ({children}) => {
       <p className="lg:w-2/3 mx-auto leading-relaxed text-xl">Hechas de madera con la esencia de sudor, sangre y gloria, estas creaciones son un reflejo de la pasión y el sacrificio que se invirtieron en su creación, convirtiéndolas en auténticas obras maestras.</p>
     </div>
 
-    <div className="flex items-stretch justify-center flex-wrap -m-4">
-      {children}
-    </div>
+    <div className="container mx-auto px-5 py-24">
+  <div className="flex flex-wrap -mx-4">
+   {children}
+  </div>
+</div>
+
 
   </div>
 </section>

@@ -1,4 +1,3 @@
-import React from 'react';
 import useReadFile  from './useReadFile';
 
 export const useData = () => {
