@@ -43,7 +43,7 @@ const Promesa = () => {
     ))}
     </div>
     {isLoading ? (
-      <h1 className="text-left text-6xl">Loading...</h1>
+      <h1 className="text-left text-6xl text-white">Loading...</h1>
     ) : (
       <div className="flex justify-evenly basis-full flex-wrap bg-indigo-900 bg-opacity-40 ">
         {data?.dog?.map((img)=>(
