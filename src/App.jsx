@@ -9,7 +9,7 @@ import { Things } from './core/components/Card/Things.jsx';
 import {Lamparas} from './core/components/app_text/Lamparas.jsx';
 import {Cosas} from './core/components/app_text/Cosas.jsx';
 
-export const App = () => (
+const App = () => (
   <BrowserRouter>
   <>
   <Navbar/>
@@ -22,3 +22,5 @@ export const App = () => (
   </>
   </BrowserRouter>
 )
+
+export default App;
