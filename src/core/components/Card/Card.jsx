@@ -10,7 +10,7 @@ export const Card = () => {
     <>
     {Data?.lamp?.map(item=>(
       
-      <div className="min-h-full w-10/12 max-w-xs  xl:w-1/4 lg:w-80  sm:w-2/4 sm:max-w-lg p-4 " key={item.id}>
+      <div className="min-h-full w-full max-w-xs  xl:w-1/4 lg:w-80  sm:w-2/4 sm:max-w-lg p-4 " key={item.id}>
         <div className="flex relative">
           <img  alt={item.title} className="absolute inset-0 w-full h-full object-cover object-center" src={item.url}/>
           <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">

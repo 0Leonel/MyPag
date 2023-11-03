@@ -29,7 +29,7 @@ const Promesa = () => {
     <div className="flex flex-wrap items-center lg:justify-between bg-black ">
     <div className="flex justify-evenly basis-full flex-wrap bg-indigo-900 bg-opacity-40 ">
     {data?.cat?.map((img)=>(
-      <a href="#" className="block rounded-lg p-4 shadow-sm shadow-white m-5 " key={img.id} >
+      <a href="#" className="block rounded-lg p-4 shadow-sm shadow-white m-4 " key={img.id} >
           <img 
          key={img.id}
          src={img.url}
@@ -47,7 +47,7 @@ const Promesa = () => {
     ) : (
       <div className="flex justify-evenly basis-full flex-wrap bg-indigo-900 bg-opacity-40 ">
         {data?.dog?.map((img)=>(
-      <a href="#" className="block rounded-lg p-4 shadow-sm shadow-white m-5" key={img.id}>
+      <a href="#" className="block rounded-lg p-4 shadow-sm shadow-white m-4" key={img.id}>
           <img 
          key={img.id}
          src={img.url}

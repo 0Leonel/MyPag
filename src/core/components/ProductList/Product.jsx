@@ -10,7 +10,7 @@ export const Product = (props) => {
     </div>
 
     <div className="container mx-auto px-5 py-24">
-  <div className="flex flex-wrap -mx-4">
+  <div className="flex justify-center flex-wrap -mx-4">
    {props.children}
   </div>
 </div>
