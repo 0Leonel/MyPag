@@ -16,13 +16,13 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-[#11140E]">
+    <Disclosure as="nav" className="bg-[#2B445B]">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-center">
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
-                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-[#D08662] hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -50,7 +50,7 @@ export default function Navbar() {
                         key={item.name}
                         to={item.href}
                         className={classNames(
-                          item.current ? 'bg-[#373A33] text-[#9DD67D] hover:bg-[#E3E3DC] hover:text-[#205106] ' : 'text-[#BDCBB0] hover:bg-[#BDCBB0] hover:text-[#11140E]',
+                          item.current ? 'bg-[#63B8D4] text-[#122625] hover:bg-[#E3E3DC] hover:text-[#205106] ' : 'text-[#62D5D1] hover:bg-[#BDCBB0] hover:text-[#11140E]',
                           'rounded-md px-3 py-2 text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}

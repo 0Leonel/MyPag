@@ -5,19 +5,19 @@ const Form = () => {
     e.preventDefault();
   }
   return (
-    <section className="bg-[#8D9286]">
+    <section className="bg-gradient-to-r from-[#102223] via-[#38567A] to-[#101923]">
   <div className="mx-auto  max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
     <div className='lg:col-span lg:py-12'>
         </div>
 
-      <div className="rounded-lg bg-gradient-to-r from-[#205106] via-[#3E4A35] to-[#003738] p-8 shadow-lg lg:col-span-3 lg:p-12">
+      <div className="rounded-lg bg-gradient-to-r from-[#38777A] via-[#38567A] to-[#1E4142] p-8 shadow-lg lg:col-span-3 lg:p-12">
        
         <form onSubmit={handleSubmit} className="space-y-4 text-[#E3E3DC]">
           <div>
           <label
                 htmlFor="UserName"
-                className="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
+                className="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-[#D18B60] focus-within:ring-1 focus-within:ring-[#D18B60]"
               >
                 <input
                   type="text"
@@ -84,7 +84,7 @@ const Form = () => {
             <label className="sr-only" htmlFor="message">Message</label>
 
             <textarea
-              className="w-full  bg-[#A0CFD0] text-[#E3E3DC] rounded-lg border-gray-200 p-3 text-sm"
+              className="w-full border-2 bg-transparent text-[#E3E3DC] rounded-lg border-gray-200 p-3 text-sm"
               placeholder="Message"
               rows="8"
               id="message"
