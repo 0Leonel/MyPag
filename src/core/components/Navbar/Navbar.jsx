@@ -37,7 +37,7 @@ export default function Navbar() {
                   <Link to={'/'}>
                   
                   <img
-                    className="h-8 w-auto hover:bg-[#E3E3DC] rounded-full"
+                    className="h-8 w-auto bg-[#E3E3DC] rounded-full hover:bg-[#C6C6C0q]"
                     src={Man}
                     alt="Your Company"
                   />
