@@ -37,7 +37,7 @@ export default function Navbar() {
                   <Link to={'/'}>
                   
                   <img
-                    className="h-8 w-auto"
+                    className="h-8 w-auto hover:bg-[#E3E3DC] rounded-full"
                     src={Man}
                     alt="Your Company"
                   />
@@ -50,7 +50,7 @@ export default function Navbar() {
                         key={item.name}
                         to={item.href}
                         className={classNames(
-                          item.current ? 'bg-[#63B8D4] text-[#122625] hover:bg-[#E3E3DC] hover:text-[#205106] ' : 'text-[#62D5D1] hover:bg-[#BDCBB0] hover:text-[#11140E]',
+                          item.current ? 'bg-[#63B8D4] text-[#122625] hover:bg-[#E3E3DC]  focus:bg-[#D18B60]' : 'text-[#62D5D1] focus:bg-[#BDCBB0] hover:text-[#11140E] focus:text-[#11140E]',
                           'rounded-md px-3 py-2 text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -73,7 +73,7 @@ export default function Navbar() {
                   as="a"
                   to={item.href}
                   className={classNames(
-                    item.current ? 'bg-[#373A33] text-[#9DD67D] hover:bg-[#E3E3DC] hover:text-[#205106] ' : 'text-[#BDCBB0] hover:bg-[#BDCBB0] hover:text-[#11140E]',
+                    item.current ?'bg-[#63B8D4] text-[#122625] hover:bg-[#E3E3DC]  focus:bg-[#D18B60]' : 'text-[#62D5D1] focus:bg-[#BDCBB0] hover:text-[#11140E] focus:text-[#11140E]',
                     'block text-center rounded-md px-3 py-2 text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}

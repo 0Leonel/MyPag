@@ -1,9 +1,90 @@
-import React from 'react'
+import React, { useState } from 'react'
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
+const MySwal = withReactContent(Swal)
 const Form = () => {
+
+  const [form,setForm] = useState({
+    user_name: "",
+    user_email: "",
+    user_phone: "",
+    user_message: "",
+  });
+
   const handleSubmit =(e) =>{
     e.preventDefault();
+    const name = e.target.user_name.value;
+    const email = e.target.user_email.value;
+    const phone = e.target.user_phone.value;
+    const message = e.target.user_message.value;
+
+    const { n } = e.target;
+    const validEmail = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+
+    const validPhone = /^\d{10}$/;
+	
+
+    if(email === '' || name === '' || phone === '' || message === ''){
+      MySwal.fire({
+        icon: 'error',
+        title: <p>Debes llenar todos los campos!</p>,
+        background: '#FFE4D4',
+        confirmButtonColor: '#524A45',
+      })
+      return;
+    }
+
+
+    if(!validEmail.test(email) ){
+      MySwal.fire({
+        icon: 'error',
+        title: <p>Email invalido</p>,
+        background: '#FFE4D4',
+        confirmButtonColor: '#524A45',
+      })
+    return;
+    }
+
+    if(!validPhone.test(phone)){
+      MySwal.fire({
+        icon: 'error',
+        title: <p>Celular invalido</p>,
+        background: '#FFE4D4',
+        confirmButtonColor: '#524A45',
+      })
+      return;
+    }
+
+
+  emailjs.sendForm('service_ytv9nhs','template_y6u9f1a',e.target,'rXm0sW1nKzsC7Avmr')
+  .then(res => {
+    console.log(res.text)
+  },error => console.log(error.text));
+  Swal.fire({
+    position: 'center',
+    icon: 'success',
+    title: 'Se envio con exitos!',
+    showConfirmButton: false,
+    timer: 1500
+  })
+  setForm({
+    user_name: '',
+    user_email: '',
+    user_phone: '',
+    user_message: '',
+  }) 
   }
+
+  const handleChange = (e) =>{
+    const name = e.target.name;
+    const value = e.target.value;
+    // console.log("Nombre: ",name);
+    // console.log("Valor: ",value);
+    setForm({...form,[name]:value,});
+  }
+
   return (
     <section className="bg-gradient-to-r from-[#102223] via-[#38567A] to-[#101923]">
   <div className="mx-auto  max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
@@ -21,8 +102,10 @@ const Form = () => {
               >
                 <input
                   type="text"
-                  id="UserName"
                   placeholder="Nombre"
+                  name='user_name'
+                  onChange={handleChange}
+                  value={form.user_name}
                   className="peer h-8 w-full text-[#E3E3DC] border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
                 />
 
@@ -38,12 +121,15 @@ const Form = () => {
             <div>
               <label
                 htmlFor="UserEmail"
-                className="relative block text-[#E3E3DC] overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
+                className="relative block text-[#E3E3DC] overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-[#D18B60] focus-within:ring-1 focus-within:ring-[#D18B60]"
               >
                 <input
                   type="email"
                   id="UserEmail"
+                  name='user_email'
                   placeholder="Email"
+                  onChange={handleChange}
+                  value={form.user_email}
                   className="peer h-8 w-full text-[#E3E3DC] border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
                 />
 
@@ -60,11 +146,14 @@ const Form = () => {
             
             <label
                 htmlFor="PhoneNumber"
-                className="relative block text-[#E3E3DC] overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
+                className="relative block text-[#E3E3DC] overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-[#D18B60] focus-within:ring-1 focus-within:ring-[#D18B60]"
               >
                 <input
                   type="number"
                   id="PhoneNumber"
+                  name='user_phone'
+                  onChange={handleChange}
+                  value={form.user_phone}
                   placeholder="Celular"
                   className=" bg-gray-800 text-[#E3E3DC] back peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
                 />
@@ -80,18 +169,21 @@ const Form = () => {
 
           
 
-          <div className=''>
+          <div>
             <label className="sr-only" htmlFor="message">Message</label>
 
             <textarea
-              className="w-full border-2 bg-transparent text-[#E3E3DC] rounded-lg border-gray-200 p-3 text-sm"
+              className="w-full border-2 bg-transparent text-[#E3E3DC] rounded-lg border-[#D18B60] p-3 text-sm"
               placeholder="Message"
               rows="8"
+              name='user_message'
+              onChange={handleChange}
+              value={form.user_message}
               id="message"
             ></textarea>
           </div>
 
-          <div className="mt-4">
+          <div className="mt-4 flex justify-end">
             <button
               type="submit"
               className="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-[#E3E3DC] sm:w-auto"

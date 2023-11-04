@@ -11,13 +11,16 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
     "axios": "^1.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-papaparse": "^4.4.0",
-    "react-router-dom": "^6.17.0"
+    "react-router-dom": "^6.17.0",
+    "sweetalert2": "^11.9.0",
+    "sweetalert2-react-content": "^5.0.7"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.1.4",
