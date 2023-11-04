@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom'
 const navigation = [
   { name: 'Lamparas', href: '/lamparas', current: false },
   { name: 'Cosas', href: '/Cosas', current: false},
-  { name: 'Gatitos', href: '/Gatitos', current: false }
+  // { name: 'Gatitos', href: '/Gatitos', current: false },
+  {name: 'Contacto', href: '/Contacto', current: true},
 ]
 
 function classNames(...classes) {
@@ -15,7 +16,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-[#11140E]">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -49,7 +50,7 @@ export default function Navbar() {
                         key={item.name}
                         to={item.href}
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          item.current ? 'bg-[#373A33] text-[#9DD67D] hover:bg-[#E3E3DC] hover:text-[#205106] ' : 'text-[#BDCBB0] hover:bg-[#BDCBB0] hover:text-[#11140E]',
                           'rounded-md px-3 py-2 text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -72,8 +73,8 @@ export default function Navbar() {
                   as="a"
                   to={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
+                    item.current ? 'bg-[#373A33] text-[#9DD67D] hover:bg-[#E3E3DC] hover:text-[#205106] ' : 'text-[#BDCBB0] hover:bg-[#BDCBB0] hover:text-[#11140E]',
+                    'block text-center rounded-md px-3 py-2 text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >

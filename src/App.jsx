@@ -7,6 +7,7 @@ import { Home } from './core/components/ProductList/Home';
 import { Card } from './core/components/Card/Card.jsx';
 import { Things } from './core/components/Card/Things.jsx';
 import { LAMPARAS_TITLE, COSAS_TITLE } from './core/components/app_text/titles.js';
+import Contacto from './core/components/form/Contacto.jsx';
 
 const App = () => (
   <BrowserRouter>
@@ -17,6 +18,7 @@ const App = () => (
       <Route path='/lamparas' element={<Product title={LAMPARAS_TITLE}> <Card/> </Product>}/>
       <Route path='/Gatitos' element={<Promesa/>}/>
       <Route path='/Cosas' element={<Product title={COSAS_TITLE}> <Things/> </Product>}/>
+      <Route path='/Contacto'element={<Contacto/>}/>
     </Routes>
   </>
   </BrowserRouter>
