@@ -1,8 +1,8 @@
 
 export const Product = (props) => {
   return (
-    <body className="bg-[#43483E]"> 
-      <section className="bg-[#1E4E4E] bg-opacity-40 body-font">
+    <body className="bg-[#11140E] "> 
+      <section className="bg-[#5D3C2C] bg-opacity-10 body-font">
   <div className="container px-5 py-24 mx-auto ">
     <div className="flex flex-col text-center w-full mb-20">
       <h1 className="sm:text-4xl text-2xl font-medium title-font mb-4 text-[#E3E3DC] ">{props.title}</h1>
