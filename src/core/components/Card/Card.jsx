@@ -1,9 +1,7 @@
 
 import Data from '../../services/data.json'
 
-export const appTitle =()=>{
-  return <p>LAmparas</p>;
-}
+
 export const Card = () => {
 
   return (
@@ -24,7 +22,6 @@ export const Card = () => {
     ))
     
 }
-<appTitle/>
     </>
     
   )

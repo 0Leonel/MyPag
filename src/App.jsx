@@ -8,7 +8,8 @@ import { Card } from './core/components/Card/Card.jsx';
 import { Things } from './core/components/Card/Things.jsx';
 import { LAMPARAS_TITLE, COSAS_TITLE } from './core/components/app_text/titles.js';
 import Contacto from './core/components/form/Contacto.jsx';
-
+import AppSwiper from './core/components/Swiper/app_swiper.jsx';
+import AppError from './core/components/404/appError.jsx';
 const App = () => (
   <BrowserRouter>
   <>
@@ -19,6 +20,8 @@ const App = () => (
       <Route path='/Gatitos' element={<Promesa/>}/>
       <Route path='/Cosas' element={<Product title={COSAS_TITLE}> <Things/> </Product>}/>
       <Route path='/Contacto'element={<Contacto/>}/>
+      <Route path='/Swiper' element={<AppSwiper/>}/>
+      <Route path='/*' element={<AppError/>}/>
     </Routes>
   </>
   </BrowserRouter>
