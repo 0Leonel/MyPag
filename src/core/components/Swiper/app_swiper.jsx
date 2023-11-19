@@ -31,9 +31,7 @@ console.log(item)
       1275: { slidesPerView: 4 },
     }}
     >
-        {/* <SwiperSlide>HOLA</SwiperSlide>
-        <SwiperSlide>HOLA 2</SwiperSlide>
-        <SwiperSlide>HOLA 3</SwiperSlide> */}
+    
         {item?.map((item) => (
             <SwiperSlide key={item.id} className='grid h-[700px] sm:h-[500px] w-full grid-rows-[repeat(2,minmax(250px,1fr))] rounded-xl border-4 border-[#B3B3B3]'> 
             <div className=''>
