@@ -37,6 +37,16 @@ const Form = () => {
     }
 
 
+    if(name.length < 3){
+      MySwal.fire({
+        icon: 'error',
+        title: <p>El nombre es demasiado corto</p>,
+        background: '#FFE4D4',
+        confirmButtonColor: '#524A45',
+      })
+      return;
+    }
+
     if(!validEmail.test(email) ){
       MySwal.fire({
         icon: 'error',
