@@ -1,4 +1,3 @@
-import React from 'react'
 import Error from '../../../assets/error.svg'
 const AppError = () => {
   return (

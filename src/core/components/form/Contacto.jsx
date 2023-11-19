@@ -15,10 +15,12 @@ const Form = () => {
 
   const handleSubmit =(e) =>{
     e.preventDefault();
-    const name = e.target.user_name.value;
+    // const name = e.target.user_name.value;
     const email = e.target.user_email.value;
     const phone = e.target.user_phone.value;
     const message = e.target.user_message.value;
+
+      const {name,value} = e.target;
 
     const { n } = e.target;
     const validEmail = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
@@ -58,7 +60,7 @@ const Form = () => {
     }
 
 
-  emailjs.sendForm('service_ytv9nhs','template_y6u9f1a',e.target,'rXm0sW1nKzsC7Avmr')
+  emailjs.sendForm('VERCEL_SERVICE_ID','VERCEL_TEMPLATE_ID',e.target,'VERCEL_PUBLIC_KEY')
   .then(res => {
     console.log(res.text)
   },error => console.log(error.text));
