@@ -47,6 +47,13 @@
             "title":"Lampara colgante",
             "description" : "Hechas de sólido pino y barnizadas con un acabado mate de barniz natural, estas creaciones son una verdadera obra de arte, donde la madera cobra vida con la pasión y habilidad que las han dado forma.",
             "price" : "No disponible"
+        },
+        {
+            "id" : "08",
+            "url" : "https://i.pinimg.com/736x/62/f6/92/62f6929a0c6b05eb3a94913bfa32271d.jpg",
+            "title":"Lampara de pie",
+            "description" : "Estas creaciones de sólido pino no solo son testigos de la destreza del artesano, sino también de la riqueza de la naturaleza misma. Cada veta y nudillo cuenta una historia única, revelando el carácter distintivo de la madera que ha sido moldeada con tanto cuidado. La elección de barnizarlas con un acabado mate de barniz natural no solo resalta la autenticidad de la madera, sino que también ofrece una experiencia táctil que invita a explorar la textura cálida y suave.",
+            "price" : "No disponible"
         }
     ]
 }
