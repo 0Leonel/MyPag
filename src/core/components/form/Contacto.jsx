@@ -96,15 +96,11 @@ const Form = () => {
   }
 
   return (
-    <section className="bg-gradient-to-r from-[#102223] via-[#38567A] to-[#101923]">
-  <div className="mx-auto  max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-    <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
-    <div className='lg:col-span lg:py-12'>
-        </div>
-
-      <div className="rounded-lg bg-gradient-to-r from-[#38777A] via-[#38567A] to-[#1E4142] p-8 shadow-lg lg:col-span-3 lg:p-12">
+    <section className="bg-gradient-to-r from-[#102223] via-[#38567A] to-[#101923] min-h-screen grid place-content-center">
+        
+      <div className="rounded-lg bg-gradient-to-r from-[#38777A] via-[#38567A] to-[#1E4142] p-8 shadow-lg lg:col-span-3 lg:p-12 ">
        
-        <form onSubmit={handleSubmit} className="space-y-4 text-[#E3E3DC]">
+        <form onSubmit={handleSubmit} className="space-y-4 text-[#E3E3DC] ">
           <div>
             <label
                 htmlFor="UserName"
@@ -204,8 +200,6 @@ const Form = () => {
           </div>
         </form>
       </div>
-    </div>
-  </div>
 </section>
   )
 }

@@ -6,18 +6,21 @@ import { useEffect, useState } from 'react';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+
+
+
 const AppSwiper = () => {
+    const fetchImg = async () => {
+        axios.get('https://fakestoreapi.com/products')
+        .then((res) => {
+            console.log(res.data)
+            setItem(res.data);
+        })
+    }
 
     const [item, setItem] = useState(null)
     useEffect(() => {
-        const fetchImg = async () => {
-            axios.get('https://fakestoreapi.com/products')
-            .then((res) => {
-                console.log(res.data)
-                setItem(res.data);
-            })
-        }
-        fetchImg();
+             fetchImg();
     },[]);
     
 console.log(item)
@@ -40,7 +43,7 @@ console.log(item)
             <h3 className='text-sm basis-full text-center  font-bold sm:text-3xl '>{item.title}</h3>
             <h4 className='text-sm text-[#c9df25] basis-full text-center  font-bold sm:text-2xl sm:bg-[#4F4F4F] '>${item.price}</h4>
  
-            <p className='text-base text-justify leading-tight align-baseline'>{item.description}</p>
+            <p className='text-sm text-justify leading-tight align-baseline'>{item.description}</p>
             </div>
             </div>
             </SwiperSlide>
